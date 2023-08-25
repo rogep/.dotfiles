@@ -1,0 +1,9 @@
+
+#!/usr/bin/env bash
+
+monitor=$(xrandr --listmonitors | grep '290x2400' | awk '{print $NF}')
+num_monitors=$(xrandr --listmonitors | grep Monitors | awk '{print $NF}')
+
+if [ -n "$monitor" ] && [ "$num_monitors" -eq 1 ]; then
+  xrandr -s 1920x1080
+fi

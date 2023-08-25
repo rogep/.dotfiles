@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+monitor=$(xrandr --listmonitors | grep '290x2400' | awk '{print $NF}')
+num_monitors=$(xrandr --listmonitors | grep Monitors | awk '{print $NF}')
+
+while true; do
+	# case: external display connected and laptop monitor disconnected
+	if [ -z "$monitor" ] && [ "$num_monitors" -eq 1 ]; then
+		true
+	fi
+
+	# case: laptop display needs to go ASAP
+	if [ -n "$monitor" ] && [ "$num_monitors" -eq 2 ]; then
+		xrandr --output $monitor --off
+	fi
+
+	# case: disconnected from external display -- need to turn on monitor display
+	if [ "$num_monitors" -eq 0 ]; then
+		xrandr --auto
+		xrandr -s 1980x2400
+	fi
+	# poll every 1 second. This may need tweaking to get smooth behaviour when docking/undocking
+	sleep 1s
+done

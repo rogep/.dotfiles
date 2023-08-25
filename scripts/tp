@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-directory=($(find ~ -type d -maxdepth 3 -mindepth 1 | fzf))
-cd $directory
-
