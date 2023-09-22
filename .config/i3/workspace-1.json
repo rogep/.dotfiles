@@ -1,0 +1,60 @@
+{
+    "border": "none",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 490,
+       "width": 744,
+       "x": 0,
+       "y": 0
+    },
+    "marks": [],
+    "name": "i3-save-tree --workspace 1 > ~/.config/i3/workspace-1.json",
+    "percent": 0.5,
+    "swallows": [
+       {
+       "class": "^Gnome\\-terminal$",
+       "instance": "^gnome\\-terminal\\-server$",
+       "machine": "^eph\\-XPS\\-13\\-9310$",
+       "title": "^i3\\-save\\-tree\\ \\-\\-workspace\\ 1\\ \\>\\ \\~\\/\\.config\\/i3\\/workspace\\-1\\.json$",
+       "window_role": "^gnome\\-terminal\\-window\\-0a3a80c8\\-196d\\-4ae7\\-9971\\-63b57b9e0abd$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splith",
+    "marks": [],
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "none",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 490,
+               "width": 744,
+               "x": 0,
+               "y": 0
+            },
+            "marks": [],
+            "name": "eph@eph-XPS-13-9310:~/Pictures",
+            "percent": 1,
+            "swallows": [
+               {
+               "class": "^Gnome\\-terminal$",
+               "instance": "^gnome\\-terminal\\-server$",
+               "machine": "^eph\\-XPS\\-13\\-9310$",
+               "title": "^eph\\@eph\\-XPS\\-13\\-9310\\:\\~\\/Pictures$",
+               "window_role": "^gnome\\-terminal\\-window\\-8c355adf\\-2086\\-400c\\-994d\\-ff7a5a65e74e$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

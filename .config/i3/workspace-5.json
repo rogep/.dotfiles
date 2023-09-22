@@ -1,0 +1,25 @@
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 768,
+       "width": 1024,
+       "x": 493,
+       "y": 230
+    },
+    "marks": [],
+    "name": "! Caleb R - Aurizn - 1 new item - Slack",
+    "percent": 1,
+    "swallows": [
+       {
+       "class": "^Slack$",
+       "instance": "^slack$",
+       "machine": "^eph\\-XPS\\-13\\-9310$",
+       "title": "^\\!\\ Caleb\\ R\\ \\-\\ Aurizn\\ \\-\\ 1\\ new\\ item\\ \\-\\ Slack$",
+       "window_role": "^browser\\-window$"
+       }
+    ],
+    "type": "con"
+}
+
