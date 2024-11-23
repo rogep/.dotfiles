@@ -1,0 +1,13 @@
+#!/bin/bash
+TMPBG=/tmp/screen.png
+LOCK=$HOME/Pictures/lock.png
+KANYE=$HOME/Pictures/kanye.jpg
+RES=1920x1080
+
+## takes a screenshot before lock and sets it blurs current screen
+ffmpeg -f x11grab -video_size $RES -y -i $DISPLAY -i $KANYE -filter_complex "boxblur=5:1,overlay=(main_w-overlay_w)/2:(main_h-overlay_h)/2" -vframes 1 $TMPBG
+i3lock -i $TMPBG
+
+# fake ransomware
+# i3lock -i $HOME/Downloads/meme1.png
+# i3lock -i $HOME/Downloads/meme2.png
